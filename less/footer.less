@@ -1,11 +1,16 @@
-// Footer Styles
 footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .flexy(flex, row, null, center, center);
+  border-top: 1px solid gray;
+  background-color: #F4F4F4;
+  width: initial;
+  height: 7rem;
+  transform: translateY(20px); //push footer down and get rid of white space
+  @media @desktop {
+    width: initial;
+    border-radius: 5px;
+    border: 1px solid darken(#F4F4F4, 10%);
+    height: 5rem;
+    transform: translateY(30px);
+
+  }
 }

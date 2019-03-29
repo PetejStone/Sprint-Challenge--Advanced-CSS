@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+  Adaptive uses different codes layouts for different screen sizes,
+  and only that layout is loaded per specific screen size, whereas
+  Responsive uses media queries to adjust to different sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+   Mobile first uses "min-width" and desktop first uses "max-width"
+   in media queries. Whatever code is outside your media-queries is what is loaded first, so with mobile first, you put code for you mobile layout outside the media queries and have the code change as they scale up, desktop first is the exact opposite, with the layout changing as you scale down.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    It makes rem units easy to convert as they are now on a 10 base scale.  1 rem is 10 px rather than the default of 16px.
 
 4. How would you describe preprocessing to someone new to CSS?
+    It is a way to organize your CSS code to make it more easy to navigate (by separating your CSS into separate files), and also helps make it more DRY.  You can also utilize things called mixins, functions, placeholders and variables, and use them throughout your CSS, so when you make a change to said variable, function, etc., it is applied wherever you used it...this makes it easier to make a lot of changes across big projects that uses the same code.
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+  My favorite concept is separating the code into separate files, making it easier for me to find my CSS code, rather than scrolling through hundreds, if not thousands of lines of code to find what I am looking for.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -58,13 +68,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 

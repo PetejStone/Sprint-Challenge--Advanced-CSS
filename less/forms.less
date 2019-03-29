@@ -1,0 +1,43 @@
+.contact {
+  width: 100%;
+}
+
+.signup-form {
+.flexy(flex, column, null, center, left);
+  width: 900px;
+  max-width: 75%;
+  margin: 5rem;
+  padding: 2em 1em 0px 1em;
+  button {
+    .btn-styles(white, black, 100%, 5rem);
+  }
+  & input,
+  & select,
+  & textarea {
+    margin: 5px 0px;
+  }
+  input,
+  select {
+    height: 5rem;
+    font-size: 1.6rem;
+  }
+  label {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  input[type='submit'] {
+    height: 5rem;
+    color: #fff;
+    background-color: #69D36E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      .pulse();
+    }
+  }
+}
+
+textarea {
+  font-size: 14px;
+}
