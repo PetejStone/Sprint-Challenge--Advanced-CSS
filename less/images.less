@@ -1,0 +1,35 @@
+header {
+  img {
+    margin-bottom: 1.7rem;
+    width: 100vw;
+    transform: translateX(-23px); //keeps header image from bleeding out
+    border-radius: 5px;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideshow-container {
+  width: 100%;
+  .center();
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+}
+.space-images {
+  img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 5px;
+  }
+}
