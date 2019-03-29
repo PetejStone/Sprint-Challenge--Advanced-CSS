@@ -42,23 +42,58 @@ p {
 .walk-text {
   margin-top: 2rem;
   h3 {
-    font-size: 3rem;
     margin-bottom: 1rem;
   }
 }
 
+.border-desktop {
+  border-top: 1px solid gray;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+ }
+
 .walk {
   width: 100%;
-  .border {
+  @media @desktop {
+    width: 90%;
+    .flexy(flex, row, null, space-between, center);
+  }
+  .border-mobile {
     width: 100vw;
     border-top: 1px solid gray;
     margin-bottom: 2rem;
+    @media @desktop {
+      display: none;
+    }
   }
   .flexy(flex, column-reverse, null, center, center);
   .btn {
+    transition: all .3s;
     margin-top: 3rem;
     .flexy(flex, row, null, center, center);
     .btn-styles(#000, #fff, 100%, 7rem);
-  
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      border: 1px solide #000;
+    }
+    @media @desktop {
+      width: 35%;
+      font-size: 1.6rem;
+      height: 3rem;
+    }
+  }
+}
+
+.walk-text {
+  @media @desktop {
+    width: 45%;
+  }
+}
+
+.btn, a {
+  &:hover {
+    .pulse();
   }
 }

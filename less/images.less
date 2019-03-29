@@ -2,7 +2,8 @@ header {
   img {
     margin-bottom: 1.7rem;
     width: 100vw;
-    transform: translateX(-23px); //keeps header image from bleeding out
+    max-width: 100%;
+    
     border-radius: 5px;
   }
 }
@@ -17,21 +18,41 @@ header {
   to {opacity: 1}
 }
 
-.slideshow-container,
-.walk-img {
+.slideshow-container {
   width: 100%;
   .center();
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
+  @media @desktop {
+    display: none;
+  }
 }
-.space-images,
+
+.desktop-images {
+  display: none;
+  img {
+    border-radius: 15px;
+    width: 30%;
+  }
+  @media @desktop {
+  .flexy(flex, row, null, space-around, center);
+ }
+}
+.space-images-carousel,
 .walk-img {
+  width: 100%;
+  max-width: 100%;
+  @media @desktop {
+    width: 45%
+  }
   img {
     width: 100%;
     max-width: 100%;
     border-radius: 15px;
     margin: 5px;
+
+
   }
 }
