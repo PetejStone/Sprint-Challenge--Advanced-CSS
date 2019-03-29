@@ -217,6 +217,11 @@ nav a {
     font-size: 1.4rem;
   }
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 40.5%;
+}
 .chromeperfectpixel-overlay {
   width: 800px !important;
   height: auto !important;
