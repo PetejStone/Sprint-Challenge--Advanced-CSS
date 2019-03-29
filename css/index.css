@@ -510,7 +510,7 @@ header img {
   }
 }
 .slideshow-container {
-  width: 100%;
+  width: 400px;
   margin: 0 auto;
 }
 .slideshow-container .fade {
