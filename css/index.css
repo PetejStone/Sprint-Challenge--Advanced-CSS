@@ -143,6 +143,7 @@ body {
 @media (min-width: 800px) {
   body {
     padding: 1rem 11.7%;
+    max-width: 800px;
   }
 }
 h1,
@@ -236,7 +237,7 @@ footer {
   align-items: center;
   border-top: 1px solid gray;
   background-color: #F4F4F4;
-  width: 100vw;
+  width: initial;
   height: 7rem;
   transform: translateY(20px);
 }
