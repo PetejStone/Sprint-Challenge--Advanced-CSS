@@ -26,7 +26,6 @@ p {
 
 
 .home {
-
   margin-top: 1rem;
   .flexy(flex, column, null, center, center);
   .content-section {
@@ -36,114 +35,30 @@ p {
       .flexy(flex, row, wrap, space-between, flex-start);
       margin-top: 19px;
     }
-    .text-content {
-      width: 100%;
-      @media @desktop {
-        width: 49%;
-        padding-right: 1%;
-      }
-    }
+   }
+ }
 
-    .img-content {
-      width: 100%;
-
-      @media @desktop {
-        width: 48%;
-        padding-left: 1%;
-      }
-
-      img {
-        border-radius: 10px;
-        width: 100%;
-        display: inline-block;
-        @media @desktop {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .inverse-content {
-    margin-top: 24px;
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-    .flexy(flex, column-reverse, null, center, center);
-    @media @desktop {
-      .flexy(flex, row, wrap, space-between, flex-start);
-      margin-top: 19px;
-    }
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
-
-  .content-destination {
-    width: 100%;
-    padding-top: 2.5rem;
-    padding-bottom: 2rem;
-    @media @desktop {
-      width: 75%;
-    }
-
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    .flexy(flex, column, null, center, center);
-    padding: 3rem;
-    width: 92%;
-    border-top: 2px dashed gray;
-    @media @desktop {
-      width: 100%;
-      padding: 2rem 0;
-      .flexy(flex, row, null, space-between, center);
-    }
-    // padding-top: 30px;
-    // border-top: 2px dashed @navigation-border;
-    // display: flex;
-    // justify-content: space-between;
-
-    .destination {
-      width: 100%;
-      @media @desktop {
-        width: 30%;
-      }
-
-
-    }
+.visit-planets,
+.walk-text {
+  margin-top: 2rem;
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
 }
-.destination {
-  margin-bottom: 35px;
+
+.walk {
+  width: 100%;
+  .border {
+    width: 100vw;
+    border-top: 1px solid gray;
+    margin-bottom: 2rem;
+  }
+  .flexy(flex, column-reverse, null, center, center);
   .btn {
+    margin-top: 3rem;
     .flexy(flex, row, null, center, center);
-    .btn-styles(#16A2B8, #fff, 100%, 4rem);
-    .center();
-    &:hover {
-      .pulse();
-      // animation-name: pulse;
-      // animation-duration: .2s;
-    }
-    @media @desktop {
-      .btn-styles(#16A2B8, #fff, 100%, 3rem);
-      border-radius: 8px;
-      font-size: 1.6rem;
-      width: 82%;
-      float: left;
-    }
-  }
-}
-
-.contact {
-  h2 {
-    .center();
+    .btn-styles(#000, #fff, 100%, 7rem);
+  
   }
 }
