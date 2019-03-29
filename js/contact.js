@@ -1,25 +1,9 @@
-const nav = document.getElementById('nav');
+
+const contact = document.querySelector('#contact');
 const form = document.querySelector('form');
-const signUp = document.querySelector('#signup');
 const overlay = document.querySelector('.overlay');
-var selector = document.getElementById('position');
-var value = selector[selector.selectedIndex].value;
 
-/// carousel slideshow
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
 
 
 //sticky nav
@@ -50,11 +34,11 @@ function myFunction() {
 //Form button functionilty
 form.addEventListener('submit', (e)=> {
   e.preventDefault();
-  alert('Thanks For Signing Up! We Will Send You Info on ' + selector[selector.selectedIndex].textContent + ' soon');
+  alert('Thanks For Reaching Out To Us! Someone Will Contact You Soon!');
   overlay.style.display = 'none';
 });
 
-signUp.addEventListener('click', (e)=> {
+contact.addEventListener('click', (e)=> {
   overlay.style.display = 'flex';
 
 });
