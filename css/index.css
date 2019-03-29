@@ -217,10 +217,12 @@ nav a {
     font-size: 1.4rem;
   }
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 40.5%;
+@media (min-width: 800px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 40.5%;
+  }
 }
 .chromeperfectpixel-overlay {
   width: 800px !important;
@@ -389,37 +391,49 @@ a:hover {
 .contact {
   width: 100%;
 }
-.contact-form {
+.signup-form {
   display: flex;
   flex-direction: column;
   flex-wrap: null;
   justify-content: center;
   align-items: left;
   width: 900px;
-  max-width: 100%;
+  max-width: 75%;
+  margin: 5rem;
   padding: 2em 1em 0px 1em;
 }
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
+.signup-form button {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 5rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
   margin: 5px 0px;
 }
-.contact-form input {
+.signup-form input,
+.signup-form select {
   height: 5rem;
   font-size: 1.6rem;
 }
-.contact-form label {
+.signup-form label {
   font-size: 1.6rem;
+  color: #fff;
 }
-.contact-form input[type='submit'] {
-  height: 4rem;
+.signup-form input[type='submit'] {
+  height: 5rem;
   color: #fff;
   background-color: #69D36E;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
-.contact-form input[type='submit']:hover {
+.signup-form input[type='submit']:hover {
   animation-name: pulse;
   animation-duration: 0.2s;
 }
@@ -543,5 +557,15 @@ header img {
 header {
   padding-top: 1rem;
   width: 100%;
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  display: none;
+  justify-content: center;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,4 +1,9 @@
 const nav = document.getElementById('nav');
+const form = document.querySelector('form');
+const signUp = document.querySelector('#signup');
+const overlay = document.querySelector('.overlay');
+var selector = document.getElementById('position');
+var value = selector[selector.selectedIndex].value;
 
 /// carousel slideshow
 var slideIndex = 0;
@@ -41,3 +46,19 @@ function myFunction() {
   }
 }
 //end of sticky nav
+
+//Form button functionilty
+form.addEventListener('submit', (e)=> {
+  e.preventDefault();
+  alert('Thanks For Signing Up! We Will Send You Info on ' + selector[selector.selectedIndex].textContent + ' soon!');
+  overlay.style.display = 'none';
+});
+
+signUp.addEventListener('click', (e)=> {
+  overlay.style.display = 'flex';
+
+});
+
+cancel.addEventListener('click', (e)=> {
+  overlay.style.display = 'none';
+});
