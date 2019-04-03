@@ -244,7 +244,7 @@ footer {
 }
 @media (min-width: 800px) {
   footer {
-    width: initial;
+    width: 100%;
     border-radius: 5px;
     border: 1px solid #dbdbdb;
     height: 5rem;
@@ -584,4 +584,3 @@ header {
   display: none;
   justify-content: center;
 }
-/*# sourceMappingURL=index.css.map */
